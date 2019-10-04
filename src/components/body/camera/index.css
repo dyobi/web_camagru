@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap');
+
+.body-cam {
+    width: 100%;
+    height: calc(100vh - 3.3rem);
+    background-color: whitesmoke;
+    position: relative;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+
+.body-cam-part {
+    position: relative;
+    float: left;
+    margin-left: calc(50% - 17rem);
+    width: 34rem;
+    height: 30rem;
+    overflow: hidden;
+    border-left: 0.3rem solid white;
+    border-right: 0.3rem solid white;
+    border-bottom: 0.3rem solid white;
+    background-color: whitesmoke;
+}
+
+.body-cam-contain {
+    position: relative;
+    float: left;
+    margin: 0;
+    width: 100%;
+    height: 21rem;
+    background-color: whitesmoke;
+}
+
+.body-cam-camera {
+    top: 0.3rem;
+    width: 33.4rem;
+    height: calc(33.4rem * 9 / 16);
+    margin-left: calc(50% - 16.7rem);
+    position: absolute;
+    object-fit: cover;
+}
+
+.body-cam-shot {
+    position: relative;
+    float: left;
+    top: 19.2rem;
+    margin-left: calc(50% - 1rem);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.body-cam-shot:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.body-cam-preview {
+    top: 0.3rem;
+    left: 0.3rem;
+    position: relative;
+    float: left;
+    width: 33.4rem;
+    height: calc(8.35rem * 9 / 16);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.body-cam-pre-one {
+    position: relative;
+    display: inline-block;
+    width: 8.35rem;
+    height: calc(8.35rem * 9 / 16);
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.body-cam-pre-one-action {
+    position: relative;
+    display: inline-block;
+    width: 8.35rem;
+    height: calc(8.35rem * 9 / 16);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.body-cam-comment {
+    position: relative;
+    float: left;
+    left: 0.3rem;
+    top: 0.6rem;
+    width: 30.4rem;
+    height: 3.4rem;
+    background-color: white;
+    cursor: text;
+    font-size: 0.7rem;
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    overflow-y: auto;
+    padding: 0 0.3rem;
+}
+
+.body-cam-choose {
+    position: relative;
+    float: left;
+    left: 0.7rem;
+    top: 1.5rem;
+    width: 1.8rem;
+    height: auto;
+    color: white;
+    cursor: pointer;
+}
+
+.body-cam-choose:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.body-cam-filter {
+    position: absolute;
+    float: left;
+    top: 19.4rem;
+    left: calc(100% - 1.85rem);
+    width: 1.6rem;
+    height: auto;
+    color: white;
+    cursor: pointer;
+}
+
+.body-cam-filter:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.body-cam-fil1 {
+    -webkit-filter: sepia(50%);
+    filter: sepia(50%);
+}
+
+.body-cam-fil2 {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.body-cam-fil3 {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}

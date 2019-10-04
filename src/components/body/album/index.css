@@ -1,0 +1,62 @@
+.body-album {
+    width: 100%;
+    height: calc(100vh - 3.3rem);
+    background-color: whitesmoke;
+    position: relative;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+
+.body-album-part {
+    position: relative;
+    float: left;
+    margin-left: calc(50% - 17rem);
+    width: 34rem;
+    height: auto;
+    overflow: hidden;
+    border-left: 0.3rem solid white;
+    border-right: 0.3rem solid white;
+    background-color: whitesmoke;
+}
+
+.body-album-each-left {
+    width: calc(50% - 0.15rem);
+    height: 14.85rem;
+    position: relative;
+    float: left;
+    background-color: whitesmoke;
+    border-right: 0.15rem solid white;
+    border-bottom: 0.3rem solid white;
+}
+
+.body-album-each-right {
+    width: calc(50% - 0.15rem);
+    height: 14.85rem;
+    position: relative;
+    float: left;
+    background-color: whitesmoke;
+    border-left: 0.15rem solid white;
+    border-bottom: 0.3rem solid white;
+}
+.body-album-pic {
+    position: relative;
+    float: left;
+    width: 16.55rem;
+    height: calc(16.55rem * 9 / 16);
+    margin-top: 0.15rem;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.body-album-comment {
+    position: relative;
+    float: left;
+    width: 16.55rem;
+    height: 3.85rem;
+    margin-top: 1.4rem;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    cursor: text;
+}
