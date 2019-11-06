@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { acc_signin, acc_user } from './actions';
 
 import Header from './components/header';
 import BodyHome from './components/body/home';
@@ -9,28 +10,23 @@ import BodyAccount from './components/body/account';
 import BodyAccAs from './components/body/account/after_signup.jsx';
 import BodyAccU from './components/body/account/after_signin.jsx';
 import axios from 'axios';
-import { URL } from './const';
 
 import './App.css';
 
 function App() {
+  const dispatch = useDispatch();
   let ui = useSelector(state => state.ui);
   let acc = useSelector(state => state.acc);
 
-  //const dispatch = useDispatch();
-  // function _handleTest() {
-  //   axios.post(URL + 'api/signin', {
-  //     name: 'aidan',
-  //     password: '123',
-  //   })
-  //   .then(res => {
-  //     if(res.data === 1) {
-  //       dispatch(acc_signin(1));
-  //     } else {
-  //       alert('password is wrong');
-  //     }
-  //   });
-  // }
+  if (acc.user === '') {
+    axios.post('/check', {})
+    .then(res => {
+      if (res.data) {
+        dispatch(acc_user(res.data));
+        dispatch(acc_signin(1));
+      }
+    })
+  }
 
   return (
     <div className="App no-drag">

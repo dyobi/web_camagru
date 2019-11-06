@@ -1,5 +1,7 @@
 const cam = {
     arr: [],
+    sticker: [],
+    patch: [],
     curr: -1,
     filter: -1
 }
@@ -17,6 +19,14 @@ const Reducer_cam = (state = cam, action) => {
         case 'CAM_FILTER':
             return Object.assign({}, state, {
                 filter: action.payload
+            });
+        case 'CAM_STICKER':
+            return Object.assign({}, state, {
+                sticker: action.payload
+            });
+        case 'CAM_PATCH':
+            return Object.assign({}, state, {
+                patch: action.payload
             });
         default:
             return state;

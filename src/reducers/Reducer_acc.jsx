@@ -1,7 +1,9 @@
 const acc = {
     signin: 0,
     signup: 0,
-    change_info: 0
+    change_info: 0,
+    user: "",
+    mail: ""
 }
 
 const Reducer_acc = (state = acc, action) => {
@@ -18,6 +20,14 @@ const Reducer_acc = (state = acc, action) => {
             return Object.assign({}, state, {
                 change_info: action.payload
             });
+        case 'ACC_USER':
+            return Object.assign({}, state, {
+                user: action.payload
+        });
+        case 'ACC_MAIL':
+            return Object.assign({}, state, {
+                mail: action.payload
+        });
         default:
             return state;
     }

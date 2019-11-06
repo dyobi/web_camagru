@@ -13,9 +13,9 @@
 .body-cam-part {
     position: relative;
     float: left;
-    margin-left: calc(50% - 17rem);
+    margin-left: calc(50% - 17.3rem);
     width: 34rem;
-    height: 30rem;
+    height: auto;
     overflow: hidden;
     border-left: 0.3rem solid white;
     border-right: 0.3rem solid white;
@@ -33,19 +33,31 @@
 }
 
 .body-cam-camera {
-    top: 0.3rem;
+    margin-top: 0.3rem;
+    width: 33.4rem;
+    height: calc(33.4rem * 9 / 16);
+    margin-left: calc(50% - 16.7rem);
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+}
+
+.body-cam-camera-s {
+    margin-top: 0.3rem;
     width: 33.4rem;
     height: calc(33.4rem * 9 / 16);
     margin-left: calc(50% - 16.7rem);
     position: absolute;
+    background-size: cover;
     object-fit: cover;
+    z-index: 9;
 }
 
 .body-cam-shot {
     position: relative;
     float: left;
     top: 19.2rem;
-    margin-left: calc(50% - 1rem);
+    margin-left: calc(50% - 2.4rem);
     font-size: 2rem;
     color: white;
     cursor: pointer;
@@ -57,8 +69,8 @@
 }
 
 .body-cam-preview {
-    top: 0.3rem;
-    left: 0.3rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
     position: relative;
     float: left;
     width: 33.4rem;
@@ -91,8 +103,9 @@
 .body-cam-comment {
     position: relative;
     float: left;
-    left: 0.3rem;
-    top: 0.6rem;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     width: 30.4rem;
     height: 3.4rem;
     background-color: white;
@@ -107,8 +120,8 @@
 .body-cam-choose {
     position: relative;
     float: left;
-    left: 0.7rem;
-    top: 1.5rem;
+    left: 0.5rem;
+    top: 1.2rem;
     width: 1.8rem;
     height: auto;
     color: white;
@@ -149,4 +162,61 @@
 .body-cam-fil3 {
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
+}
+
+.file {
+    position: relative;
+    float: left;
+    margin-left: 0.3rem;
+    top: 19.5rem;
+    width: 1.4rem;
+    height: auto;
+    color: white;
+    cursor: pointer;
+}
+
+.file:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.sticker-container {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    position: relative;
+    float: left;
+    width: 33.15rem;
+    height: 2rem;
+    padding-right: 0.25rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.sticker-array {
+    position: relative;
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.25rem 0 0.25rem 0.25rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.sticker-array:hover {
+    background-color: pink;
+    transition: 0.3s;
+}
+
+.sticker-patch {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    cursor: pointer;
 }

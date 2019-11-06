@@ -14,7 +14,7 @@
 .body-account-part {
     position: relative;
     float: left;
-    margin-left: calc(50% - 17rem);
+    margin-left: calc(50% - 17.3rem);
     width: 34rem;
     height: 30rem;
     overflow: hidden;
@@ -52,10 +52,32 @@
     line-height: 0.8rem;
 }
 
+.body-acc-idtext1 {
+    position: relative;
+    float: left;
+    margin-top: 7.25rem;
+    margin-left: 2.65rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    line-height: 0.8rem;
+}
+
 .body-account-id {
     position: relative;
     float: left;
     margin-top: 3rem;
+    margin-left: 1rem;
+    width: 8rem;
+    height: 1rem;
+    font-size: 0.6rem;
+    font-family: 'Turret Road', cursive;
+    font-weight: lighter;
+}
+
+.body-account-id1 {
+    position: relative;
+    float: left;
+    margin-top: 7rem;
     margin-left: 1rem;
     width: 8rem;
     height: 1rem;
@@ -118,7 +140,23 @@
     font-weight: lighter;
 }
 
-.body-acc-inup {
+.body-acc-inup1 {
+    position: absolute;
+    top: 9.5rem;
+    left: calc(50% - 4rem);
+    width: 8rem;
+    height: 1.8rem;
+    background-color: whitesmoke;
+    font-family: 'Teko', sans-serif;
+    line-height: 1.8rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: 0.1rem solid white;
+    cursor: pointer;
+}
+
+.body-acc-inup2 {
     position: absolute;
     top: 16rem;
     left: calc(50% - 4rem);
@@ -134,7 +172,7 @@
     cursor: pointer;
 }
 
-.body-acc-inup:hover {
+.body-acc-inup1:hover, .body-acc-inup2:hover {
     background-color: #EEEEEE;
     color: white;
     transition: 0.3s;
@@ -154,6 +192,22 @@
     text-align: center;
     font-weight: lighter;
     color: white;
+}
+
+.accas-txt-1 {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+}
+
+.accas-txt-1:hover {
+    color: #FCE4EC;;
+    transition: 0.3s;
 }
 
 .signin-form {
@@ -210,7 +264,8 @@
 
 .body-acc-in-as {
     position: relative;
-    margin-left: calc(50% - 4rem);
+    float: left;
+    margin: 3rem 1.65rem;
     width: 8rem;
     height: 1.8rem;
     margin-top: 3rem;
@@ -244,7 +299,10 @@
 .body-acc-info-user {
     position: relative;
     float: left;
+    width: 8rem;
+    height: 1rem;
     margin-left: 1.5rem;
+    text-align: center;
     font-size: 0.8rem;
     font-weight: lighter;
     line-height: 0.8rem;
@@ -319,4 +377,53 @@
     color: white;
     line-height: 10rem;
     text-align: center;
+}
+
+.body-acc-nametext {
+    position: relative;
+    float: left;
+    margin-top: 1.25rem;
+    margin-left: 3rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    line-height: 0.8rem;
+}
+
+.body-account-name {
+    position: relative;
+    float: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 8rem;
+    height: 1rem;
+    font-size: 0.6rem;
+    font-family: 'Turret Road', cursive;
+    font-weight: lighter;
+}
+
+.body-acc-info-name {
+    margin-top: 0.25rem;
+    position: relative;
+    float: left;
+    margin-left: 3.35rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    line-height: 0.8rem;
+}
+
+.body-acc-in-hi {
+    position: relative;
+    float: left;
+    margin: 3rem calc(50% - 4rem);
+    width: 8rem;
+    height: 1.8rem;
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    font-family: 'Teko', sans-serif;
+    line-height: 1.8rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: 0.1rem solid white;
+    cursor: pointer;
 }
