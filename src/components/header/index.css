@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    height: 3.3rem;
+    margin: 0;
+    position: relative;
+    float: left;
+}
+
+.header-top {
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.menu {
+    top: 1rem;
+    line-height: 1rem;
+    font-weight: lighter;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+.header-home {
+    left: calc(50% - 12.5rem);
+}
+
+.header-camera {
+    left: calc(50% - 6.5rem);
+}
+
+.header-album {
+    left: calc(50% - 0.5rem);
+}
+
+.header-account {
+    left: calc(50% + 5.5rem);
+}
+
+.header-bottom {
+    width: 100%;
+    height: 0.3rem;
+    background-color: white;
+}

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap');
+
+.body-album {
+    width: 100%;
+    height: calc(100vh - 3.3rem);
+    background-color: whitesmoke;
+    position: relative;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+
+.body-album-part {
+    position: relative;
+    float: left;
+    margin-left: calc(50% - 8.5rem);
+    width: 17rem;
+    height: auto;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.body-album-each {
+    width: calc(100% - 0.6rem);
+    height: auto;
+    position: relative;
+    float: left;
+    background-color: whitesmoke;
+    border-right: 0.3rem solid white;
+    border-left: 0.3rem solid white;
+    border-bottom: 0.3rem solid white;
+}
+
+.body-album-pic {
+    position: relative;
+    float: left;
+    width: 16.1rem;
+    height: calc(16.1rem * 9 / 16);
+    margin-top: 0.15rem;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-album-comment {
+    position: relative;
+    float: left;
+    width: calc(100% - 0.5rem);
+    height: 2.55rem;
+    border: white solid 0.1rem;
+    margin-top: 0.3rem;
+    margin-left: 0.15rem;
+    margin-bottom: 0.15rem;
+    cursor: text;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    line-height: 2.55rem;
+    color: gray;
+}
+
+.body-album-ft-1 {
+    position: relative;
+    float: left;
+    width: 1rem;
+    height: auto;
+    top: 0.4rem;
+    color: white;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.body-album-ft-2 {
+    position: relative;
+    float: left;
+    width: 0.9rem;
+    height: auto;
+    top: 0.45rem;
+    color: white;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.body-album-ft2 {
+    position: relative;
+    float: right;
+    width: 1rem;
+    height: auto;
+    top: 0.4rem;
+    color: white;
+    margin-left: 1.5rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+}
+
+.body-album-ft2:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.body-album-ft-1:hover, .body-album-ft-2:hover, .body-album-ft-2-1:hover, .body-album-ft-1-1:hover, .ba-comment-send:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.body-album-postid {
+    position: relative;
+    width: 10rem;
+    float: left;
+    font-size: 0.8rem;
+    margin-top: 0.05rem;
+    margin-left: calc(50% - 7.5rem);
+    margin-bottom: 0.2rem;
+    top: 0.4rem;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 0.8rem;
+    color: gray
+}
+
+.count_like {
+    position: relative;
+    float: left;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+    font-weight: lighter;
+    line-height: 0.6rem;
+    color: gray;
+}
+
+.count_comment {
+    position: relative;
+    float: left;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+    font-weight: lighter;
+    line-height: 0.6rem;
+    color: gray;
+}
+
+.body-album-ft-2-1 {
+    position: relative;
+    float: left;
+    width: 0.9rem;
+    height: auto;
+    top: 0.45rem;
+    color: pink;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.body-album-ft-1-1 {
+    position: relative;
+    float: left;
+    width: 1rem;
+    height: auto;
+    top: 0.4rem;
+    color: pink;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.body-album-comment-1 {
+    position: relative;
+    float: left;
+    width: 15.9rem;
+    height: 5rem;
+    border: white solid 0.1rem;
+    margin-top: 0.3rem;
+    margin-left: 0.15rem;
+    margin-bottom: 0.15rem;
+    cursor: text;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    line-height: 5rem;
+    color: gray;
+}
+
+.ba-comment-top {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 3.5rem;
+    border-bottom: white solid 0.1rem;
+    text-align: left;
+    text-indent: 0.3rem;
+    font-weight: lighter;
+    font-size: 0.5rem;
+    line-height: 3.5rem;
+    overflow-y: scroll;
+}
+
+.ba-comment-btm {
+    position: relative;
+    float: left;
+    width: calc(100% - 1.2rem);
+    height: 1.15rem;
+    margin-left: 0.15rem;
+    margin-top: 0.15rem;
+    text-align: left;
+    text-indent: 0.2rem;
+    font-weight: lighter;
+    font-family: 'Teko', sans-serif;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    background-color: #fff;
+}
+
+.ba-comment-send {
+    position: relative;
+    float: left;
+    width: 1rem;
+    height: auto;
+    margin-top: 0.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.each_comment {
+    position: relative;
+    float: left;
+    width: 90%;
+    margin-top: 0.2rem;
+    height: 0.6rem;
+    text-align: left;
+    text-indent: 0.2rem;
+    font-weight: lighter;
+    font-family: 'Teko', sans-serif;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+}
+
+.each_comment_del {
+    position: relative;
+    float: left;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-top: 0.1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.each_comment_del:hover {
+    color: #FCE4EC;
+    transition: 0.3s;
+}
+
+.body-album-pic1 {
+    position: relative;
+    float: left;
+    width: 16.1rem;
+    height: calc(16.1rem * 9 / 16);
+    margin-top: 0.15rem;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: sepia(50%);
+    filter: sepia(50%);
+}
+
+.body-album-pic2 {
+    position: relative;
+    float: left;
+    width: 16.1rem;
+    height: calc(16.1rem * 9 / 16);
+    margin-top: 0.15rem;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.body-album-pic3 {
+    position: relative;
+    float: left;
+    width: 16.1rem;
+    height: calc(16.1rem * 9 / 16);
+    margin-top: 0.15rem;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
