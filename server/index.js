@@ -118,7 +118,7 @@ app.post('/signup', (req, res) => {
         service: 'gmail',
         auth: {
             user: '42sv.camagru@gmail.com',
-            pass: 'gusdk314'
+            pass: '******'
         }
     });
 
@@ -367,7 +367,7 @@ app.post('/like', (req, res) => {
                             service: 'gmail',
                             auth: {
                                 user: '42sv.camagru@gmail.com',
-                                pass: 'gusdk314'
+                                pass: '*******'
                             }
                         });
                         const mailOptions = {
@@ -400,7 +400,7 @@ app.post('/like', (req, res) => {
                             service: 'gmail',
                             auth: {
                                 user: '42sv.camagru@gmail.com',
-                                pass: 'gusdk314'
+                                pass: '*******'
                             }
                         });
                         const mailOptions = {
@@ -485,7 +485,7 @@ app.post('/comment_push', (req, res) => {
                         service: 'gmail',
                         auth: {
                             user: '42sv.camagru@gmail.com',
-                            pass: 'gusdk314'
+                            pass: '*******'
                         }
                     });
                     const mailOptions = {
@@ -540,7 +540,7 @@ app.post('/forgot', (req, res) => {
                         service: 'gmail',
                         auth: {
                             user: '42sv.camagru@gmail.com',
-                            pass: 'gusdk314'
+                            pass: '*******'
                         }
                     });
                 
@@ -578,5 +578,5 @@ app.post('/com_del', (req, res) => {
 https.createServer({
     key: fs.readFileSync(path.join(__dirname, 'key.pem')),
     cert: fs.readFileSync(path.join(__dirname, 'cert.pem')),
-    passphrase: 'gusdk314'
+    passphrase: '*******'
   }, app).listen(8443, () => console.log("hello"))
